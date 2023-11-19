@@ -14,7 +14,10 @@ console.log(p_02);
 // Task 03
 //Созданы две константы s_031 и s_032. Создайте константу s_3 и присвойте ей конкатенацию констант s_031 и s_032. Тип данных s_3 задайте явно. Для проверки - выведите s_3 в консоль.
 
-//const s_3 : string = s_031 + s_032;
+const s_031 : string = 'Type';
+const s_032 : string = 'Script';
+const s_3 : string = s_031 + s_032;
+console.log(s_3);
 
 
 // Task 04
@@ -91,16 +94,19 @@ let s_13 : string;
 s_13 = String(document.querySelector('.p-13'));
 console.log(n_13);
 console.log(s_13);
+
 // Task 14
 // Создайте переменную b_14 с типом данных boolean. Не присваивайте ей значения. Выведите в консоль содержимое переменной и тип данных.
 
-
+let b_14 : boolean;
+console.log(b_14);
 
 
 // Task 15
 // Создайте переменную b_15 с типом данных boolean и значением false. Выведите в .out-15 содержимое переменной b_15.
 
-
+let b_15 : boolean = false;
+document.querySelector('.out-15').textContent = String(b_15);
 
 
 // Task 16
@@ -108,27 +114,35 @@ console.log(s_13);
 
 const b_161 : boolean = true;
 const b_162 : boolean = false;
-
-
+const b_16 : boolean = b_161 && b_162;
+console.log(b_16);
 
 // Task 17
 // Созданы две константы b_171 и b_172. Создайте константу b_17 куда поместите || данных констант. Тип данных определите самостоятельно. Результат выведите в .out-17.
 
 const b_171 : boolean = true;
 const b_172 : boolean = false;
-
-
+const b_17 : boolean = b_171 || b_172;
+document.querySelector('.out-17').textContent = String(b_17);
 
 // Task 18
 // Создайте переменную b_18, тип boolean, значение false. Создайте переменную b_negative куда поместите ! (отрицание) переменной b_18. Выведите результат в консоль.
+
+let b_18 : boolean = false;
+let b_negative : boolean = !b_18;
+console.log(b_negative);
 
 
 
 // Task 19
 // Создайте переменную b_19, тип boolean и поместите в нее значение из .p-19. Выведите в консоль.
 
+let b_19 : boolean = Boolean(document.querySelector('.p-19'));
+console.log(b_19);
 
 
 // Тask 20
 // Создайте переменную b_20, тип boolean и поместите в нее значение из .p-20 (число из .p-20). Выведите в консоль.
 
+let b_20 : boolean = Boolean(document.querySelector('.p-20'));
+console.log(b_20);
